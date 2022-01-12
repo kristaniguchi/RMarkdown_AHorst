@@ -1,0 +1,51 @@
+---
+title: "RMarkdown Workshop - UDM 2022"
+author: "Kris Taniguchi-Quan"
+date: "1/11/2022"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+    theme: sandstone
+    code_folding: hide
+    code_download: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE) #default is to have the code in code chunk to show up (echo = TRUE) for global setting, can override echo=FALSE for an individual code chunks
+#best place to attach libraries is here in the setup chunk
+```
+
+# Level 1 Header
+
+## Level 2 Header
+
+### Level 3 Header
+
+Add some regular text
+
+```{r}
+plot(cars)
+```
+
+
+## Another Level 2 Header
+
+# Another Level 1 Header
+
+Some more great text!
+Cmd + Opt + i (MAC) or Ctrl + Alt + i (PC) for shortcut R chunk
+
+```{r}
+teddydog <- 8
+
+teddydog
+
+```
+
+
+Teddy is 12 years old. << Not great, would need to manually change 12 if it changes.
+
+Teddy is `r teddydog` years old.
+
